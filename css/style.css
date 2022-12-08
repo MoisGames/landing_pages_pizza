@@ -3,6 +3,9 @@ li {display: inline;
     margin-right: 3% ;
     padding: 0;
 }
+.li_hits {
+    color: rgb(255, 0, 0);
+}
 .tel {
     display: inline;
     font-family: Courier;
@@ -41,13 +44,37 @@ header {
 }
 .advantages {
     float: left;
-    width: 20%;
-    margin: 5% 5% 5% 5%;
-    font-size: 150%;
+    width: 18%;
+    margin: 5% 1% 5% 5%;
+    font-size: 125%;
 }
 .image_advantages {
     float: left;
     width: 20%;
     margin: 0% 5% 0% 5%;
     
+}
+.gift {
+    float: left;
+    background-color: rgb(252, 1, 1);
+    color: rgb(255, 255, 255);
+    width: 17%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 125%;
+    margin: 5% 1% 5% 5%;
+    border: 5%;
+    padding: 1% 2%;
+}
+.gift:hover {
+    float: left;
+    background-color: rgb(224, 20, 20);
+    color: rgb(247, 241, 241);
+    width: 17%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 145%;
+    margin: 5% 1% 5% 5%;
+    border: 5%;
+    padding: 1% 2%;
 }
