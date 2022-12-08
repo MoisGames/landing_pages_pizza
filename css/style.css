@@ -32,9 +32,16 @@ header {
 }
 
 .pizza_main {
-    align-content: right;
+    float: right;
+    display: block;
+    margin: 5% 10%;
     height: fit-content;
     width: 40%;
     background-attachment: fixed;
-    align-content: last baseline;
+}
+.advantages {
+    float: left;
+    width: 20%;
+    margin: 5% 0% 5% 5%;
+    font-size: 150%;
 }
