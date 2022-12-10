@@ -112,6 +112,20 @@ header {
     background-color: antiquewhite;
     background-image: url('../images/img_caramel_pony.png');
 }
+#img_caramel_ponycard:hover {
+    background-color: antiquewhite;
+    background-image: url('../images/img_caramel_pony2.jpg');
+    transition-property: all;
+    transition-duration: 500ms;
+}
+#img_standart_rolls {
+    background-color: antiquewhite;
+    background-image: url('../images/img_standart_rolls.jpg');
+}
+#img_standart_rolls:hover {
+    background-color: antiquewhite;
+    background-image: url('../images/img_standart_rolls2.png');
+}
 .name_grocery {
     display: block;
 
