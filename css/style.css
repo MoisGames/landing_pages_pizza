@@ -95,9 +95,38 @@ header {
     margin: 0% 0% 5% 5%;
 }
 .grocery_card {
-    width: 15%;
-    margin: 0% 5% 5% 5%;
+    display: inline-block;
+    width: 28%;
+    height: 60vh;
+    margin: 0% -2.5% 5% 5%;
 }
-.img_grocery_card {
-    margin: 5%;
+.img_grocery {
+    display: block;
+    float: left;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+#img_caramel_ponycard {
+    background-color: antiquewhite;
+    background-image: url('../images/img_caramel_pony.png');
+}
+.name_grocery {
+    display: block;
+
+    margin: 5% 0;
+    font-size: 150%;
+    font-weight: 600;
+}
+.description_grocery {
+    display: block;
+    float: left;
+}
+.price {
+    display: block;
+    font-size: 150%;
+    width: 200px;
+    height: 100%;
+    margin: 5% 0;
 }
