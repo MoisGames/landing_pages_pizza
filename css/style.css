@@ -97,7 +97,7 @@ header {
 .grocery_card {
     display: inline-block;
     width: 28%;
-    height: 60vh;
+    height: 70vh;
     margin: 0% -2.5% 5% 5%;
 }
 .name_grocery {
@@ -125,18 +125,26 @@ header {
 }
 .button_counter_product {
     margin: 5%;
+    height: 10%;
 }
 #buttonCountPlus {
     display: inline-block;
     background-color: rgb(231, 229, 229);
-
     border:none;
     border-radius: 100%;
-    width: 20%;
-    height: 25%;
+    width: 14%;
+    height: 100%;
     text-align: center;
     cursor: pointer;
     font-size: 150%;
+        
+}
+#buttonCountPlus[value="+"] {
+    filter: blur(0.5px);
+}
+#buttonCountPlus:hover {
+    font-weight: 900;
+    filter: blur(0);
 }
 #buttonCountNumber {
     display: inline-block;
@@ -147,7 +155,23 @@ header {
 }
 #buttonCountMinus {
     display: inline-block;
+    background-color: rgb(231, 229, 229);
+    border:none;
+    border-radius: 100%;
+    width: 14%;
+    height: 100%;
     text-align: center;
+    cursor: pointer;
+    font-size: 150%;
+    font-weight: 900;
+    
+}
+#buttonCountMinus[value="–"] {
+    filter: blur(0.5px);
+}
+#buttonCountMinus:hover {
+    font-weight: 900;
+    filter: blur(0);
 }
 .img_grocery {
     display: block;
@@ -160,12 +184,24 @@ header {
 #img_caramel_ponycard {
     background-color: antiquewhite;
     background-image: url('../images/img_caramel_pony.png');
+    
+    
+
 }
 #img_caramel_ponycard:hover {
     background-color: antiquewhite;
+    
+    /*transition-property: all;
+    transition-duration: 100ms;*/
+    opacity: 0;
+    transition: opacity .5s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
     background-image: url('../images/img_caramel_pony2.jpg');
-    transition-property: all;
-    transition-duration: 500ms;
+    
+    
 }
 #img_standart_rolls {
     background-color: antiquewhite;
