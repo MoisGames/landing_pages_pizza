@@ -184,25 +184,30 @@ header {
 #img_caramel_ponycard {
     background-color: antiquewhite;
     background-image: url('../images/img_caramel_pony.png');
+    /*transition: opacity 0 0.5s opacity 1; */
     
-    
-
 }
 #img_caramel_ponycard:hover {
     background-color: antiquewhite;
-    
+    background-image: url('../images/img_caramel_pony2.jpg');
     /*transition-property: all;
-    transition-duration: 100ms;*/
+    transition-duration: 100ms;
     opacity: 0;
     transition: opacity .5s;
     transition-property: opacity;
     transition-duration: 0.5s;
     transition-timing-function: ease;
-    transition-delay: 0s;
-    background-image: url('../images/img_caramel_pony2.jpg');
-    
-    
+    transition-delay: 0s;*/ 
+    animation: fadeIn 0.5s; /* Animation and keyframes. Ideals. I Win! */
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    40% { opacity: 0.3; }
+    60% { opacity: 0.5; }
+    80% { opacity: 0.9; }
+    100% { opacity: 1; }
+  }
 #img_standart_rolls {
     background-color: antiquewhite;
     background-image: url('../images/img_standart_rolls.jpg');
