@@ -107,7 +107,7 @@ header {
 .grocery_card {
     display: block;
     width: 27%;
-    margin: 0 7.5% 5% 0;
+    margin: 0 5% 5% 0;
     
 }
 .name_grocery {
@@ -123,6 +123,7 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-weight: normal ;
     margin: 0 0 5% 0;
+    height: 15vh;
 }
 .price {
     display: block;
@@ -133,23 +134,23 @@ header {
     font-weight: 300;
 }
 .button_counter_product {
-    margin: 5%;
-    height: 10%;
+    margin: 5% 5% 5% 0;
+    height: 15%;
 }
 #buttonCountPlus {
     display: inline-block;
     background-color: rgb(231, 229, 229);
     border:none;
     border-radius: 100%;
-    width: 14%;
-    height: 100%;
+    width: 45px;
+    height: 45px;
     text-align: center;
     cursor: pointer;
     font-size: 150%;
         
 }
 #buttonCountPlus[value="+"] {
-    filter: blur(0.5px);
+    filter: blur(0.4px);
 }
 #buttonCountPlus:hover {
     font-weight: 900;
@@ -167,8 +168,8 @@ header {
     background-color: rgb(231, 229, 229);
     border:none;
     border-radius: 100%;
-    width: 14%;
-    height: 100%;
+    width: 45px;
+    height: 45px;
     text-align: center;
     cursor: pointer;
     font-size: 150%;
@@ -176,7 +177,7 @@ header {
     
 }
 #buttonCountMinus[value="–"] {
-    filter: blur(0.5px);
+    filter: blur(0.4px);
 }
 #buttonCountMinus:hover {
     font-weight: 900;
@@ -185,8 +186,10 @@ header {
 .img_grocery {
     display: block;
     width: 27vw;
-    height: 70vh;
+    height: 60vh;
     margin-right: auto;
+    background-size: cover;
+    background-position: center;
 }
 #img_caramel_ponycard {
     background-color: antiquewhite;
@@ -225,4 +228,25 @@ header {
     background-image: url('../images/img_standart_rolls2.png');
     animation: fadeIn 0.5s;
 }
-
+#img_pizza_margarita {
+    background-color: antiquewhite;
+    background-image: url('../images/img_pizza_margarita2.png');
+}
+#img_pizza_margarita:hover {
+    background-color: antiquewhite;
+    background-image: url('../images/img_pizza_margarita.jpg');
+    animation: fadeIn 0.5s;
+}
+.add_product {
+    display: inline-block;
+    background-color: rgb(252, 1, 1);
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    vertical-align: bottom;
+    border-radius: 20px;
+    font-size: 125%;
+    border: 5%;
+    padding: 1% 2%;
+}
