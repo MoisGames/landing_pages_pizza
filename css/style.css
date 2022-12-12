@@ -250,3 +250,9 @@ header {
     border: 5%;
     padding: 1% 2%;
 }
+
+.minus, .number, .plus {
+    display: inline;
+    margin: 5%;
+    font-size: 150%;
+  }
