@@ -1,29 +1,37 @@
-li {display: inline; 
-    font-weight: 900;
-    margin-right: 3% ;
-    padding: 0;
+.ul_navugation {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
 }
-.li_hits {
+#li_hits {
     color: rgb(247, 0, 0);
 }
+.li_navigation {
+    display: inline-flex;
+    margin: 0;
+}
 .tel {
-    display: inline;
+    display: inline-flex;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 200;
-    font-size: 175%;
-    margin: 2% 1% 0% 7%;
+    font-size: 30px;
+    
     padding: 0;
 }
 header {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 87.5%;
+    font-size: 24px;
     margin: 3% 1% 1% 7%;
     margin-right: 1%;
+    font-weight: 900;
 }
 .slogan {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
-    font-size: 800%;
+    
+    font-size: calc(40px + 120 * (100vw / 1920));
     margin: 5% 1% 0% 7%;
     line-height: 90%;
 }
@@ -39,7 +47,8 @@ header {
     display: block;
     margin: 5% 10%;
     height: fit-content;
-    width: 40%;
+    min-width: 20%;
+    max-width: 40%;
     background-attachment: fixed;
 }
 .advantages {
@@ -209,7 +218,7 @@ header {
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;*/ 
-    animation: fadeIn 0.5s; /* Animation and keyframes. Ideals. I Win! */
+    animation: fadeIn 0.5s; /* Animation and keyframes.*/
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
