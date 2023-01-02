@@ -55,43 +55,29 @@ header {
     display: inline-flex;
     flex-flow: row wrap;
     width: 100%;
-    flex: 2 2 2;
-    flex-direction: row;
     text-align:justify;
-    border: medium dashed rgb(255, 0, 0);
+
 }
 .benefits_text { /*OK */
     display: inline-flex;
     flex-wrap: nowrap;
     height: 80px;
     width: 400px;
-    border: medium dashed rgb(0, 238, 255);
+    margin-top: 5%;
+
 }
 .advantages { /*OK */
     display: inline-flex;
-    flex: 2 2 2;
-    align-items: left;
-    justify-content: space-between;
-    justify-content: left;
-    flex-wrap: wrap;
-    width: 18%;
+    width: 20%;
     margin: 5% 1% 5% 5%;
     font-size: 125%;
-    white-space: nowrap;
-    border: medium dashed green;
-}
-.image_advantages_block {
-    display: inline-flex;
-    position: relative;
-    flex: 2 2 2;
-    width: 100%;
-    background-color: red;
+    text-align: center;
 }
 .image_advantages { /* NOT */
     display: inline-flex;
-    flex: 2 2 2;
-    width: 20%;
-    
+    background-size: contain;
+    width: 5vw;
+    margin-right: 5%;
 }
 .button_gift {
     display: flex;
@@ -133,7 +119,7 @@ header {
     font-size: 150%;
     margin: 0% 0% 5% 5%;
 }
-.container { 
+.container_grocery { 
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -155,72 +141,6 @@ header {
     font-size: 150%;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-}
-.description_grocery {
-    display: block;    
-    font-size: 120%;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: normal ;
-    margin: 0 0 5% 0;
-    height: 15vh;
-}
-.price {
-    display: block;
-    font-size: 175%;
-    width: 200px;
-    margin: 5% 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 300;
-}
-.button_counter_product {
-    margin: 5% 5% 5% 0;
-    height: 15%;
-}
-#buttonCountPlus {
-    display: inline-block;
-    background-color: rgb(231, 229, 229);
-    border:none;
-    border-radius: 100%;
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 150%;
-        
-}
-#buttonCountPlus[value="+"] {
-    filter: blur(0.4px);
-}
-#buttonCountPlus:hover {
-    font-weight: 900;
-    filter: blur(0);
-}
-#buttonCountNumber {
-    display: inline-block;
-    color: rgb(255, 0, 0);
-    font-size: 150%;
-    text-align: center;
-    margin: 2.5%;
-}
-#buttonCountMinus {
-    display: inline-block;
-    background-color: rgb(231, 229, 229);
-    border:none;
-    border-radius: 100%;
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 150%;
-    font-weight: 900;
-    
-}
-#buttonCountMinus[value="–"] {
-    filter: blur(0.4px);
-}
-#buttonCountMinus:hover {
-    font-weight: 900;
-    filter: blur(0);
 }
 .img_grocery {
     display: block;
@@ -290,6 +210,72 @@ header {
     padding: 1% 2%;
 }
 
+.description_grocery {
+    display: block;    
+    font-size: 120%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal ;
+    margin: 0 0 5% 0;
+    height: 15vh;
+}
+.price {
+    display: block;
+    font-size: 175%;
+    width: 200px;
+    margin: 5% 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+}
+.button_counter_product {
+    margin: 5% 5% 5% 0;
+    height: 15%;
+}
+#buttonCountPlus {
+    display: inline-block;
+    background-color: rgb(231, 229, 229);
+    border:none;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 150%;
+        
+}
+#buttonCountPlus[value="+"] {
+    filter: blur(0.4px);
+}
+#buttonCountPlus:hover {
+    font-weight: 900;
+    filter: blur(0);
+}
+#buttonCountNumber {
+    display: inline-block;
+    color: rgb(255, 0, 0);
+    font-size: 150%;
+    text-align: center;
+    margin: 2.5%;
+}
+#buttonCountMinus {
+    display: inline-block;
+    background-color: rgb(231, 229, 229);
+    border:none;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 150%;
+    font-weight: 900;
+    
+}
+#buttonCountMinus[value="–"] {
+    filter: blur(0.4px);
+}
+#buttonCountMinus:hover {
+    font-weight: 900;
+    filter: blur(0);
+}
 .minus, .number, .plus {
     display: inline;
     margin: 5%;
@@ -302,4 +288,32 @@ header {
     .advantages {
         font-size: 22px;
     }
+    .image_advantages {
+        width: 40px;
+        height: 40px;
+    }
+    .benefits_text {
+        font-size: 20px;
+    }
+    .benefits_container {
+        flex-direction: column;
+    }
+    .image_advantages {
+        margin: 15%;
+    }
+    .container_grocery {
+        font-size: 20px;
+        flex-direction: column;
+    }
+    .grocery_card,.img_grocery {
+        width: 95%;
+    }
+}
+.c-icon {
+    width: 40px;
+}
+.c-badge {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
 }
