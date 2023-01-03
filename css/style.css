@@ -111,18 +111,27 @@ header {
     font-size: 250%;
     margin: 5% 0% 2.5% 5%;
 }
-.div_suggestion {
+.div_name_product {
+    display: flex;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+    margin: 5% 0% 2.5% 5%;
+}
+.div_suggestion,#div_suggestion_hits {
     display: block;
     font-weight: 100;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(247, 7, 7);
     font-size: 150%;
     margin: 0% 0% 5% 5%;
 }
+#div_suggestion_hits {
+    color: rgb(247, 7, 7);
+}
 .container_grocery { 
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
+    flex-flow: row wrap;
     width: 95%;
     margin: 5% 0 0% 5%;
     align-items:flex-start;
@@ -133,7 +142,6 @@ header {
     display: block;
     width: 27%;
     margin: 0 5% 5% 0;
-    
 }
 .name_grocery {
     display: block;
@@ -153,9 +161,6 @@ header {
 #img_caramel_ponycard {
     background-color: antiquewhite;
     background-image: url('../images/img_caramel_pony.png');
-    /*transition: opacity 0 0.5s opacity 1; */
-
-    
 }
 #img_caramel_ponycard:hover {
     background-color: antiquewhite;
@@ -170,6 +175,52 @@ header {
     transition-delay: 0s;*/ 
     animation: fadeIn 0.5s; /* Animation and keyframes.*/
 }
+#img_boloneze_spagetti {
+    background-color: antiquewhite;
+    background-image: url('../images/boloneze_spagetti.jpg');
+}
+#img_boloneze_spagetti:hover {
+    background-color: antiquewhite;
+    background-image: url('../images/boloneze_spagetti2.png');
+    animation: fadeIn 0.5s; 
+}
+#img_boloneze_penne {
+    background-color: antiquewhite;
+    background-image: url('../images/boloneze_penni.jpg');
+}
+#img_boloneze_penne:hover {
+    background-color: antiquewhite;
+    background-image: url('../images/boloneze_penni2.png');
+    animation: fadeIn 0.5s; 
+}
+#img_pizza_pepperoni {
+    background-color: antiquewhite;
+    background-image: url('../images/pizza_pepperoni.png');
+}
+#img_pizza_pepperoni:hover {
+    background-color: antiquewhite;
+    background-image: url('../images/pizza_pepperoni2.jpg');
+    animation: fadeIn 0.5s; 
+}
+#img_rolls_ananas {
+    background-color: antiquewhite;
+    background-image: url('../images/rolls_ananas.png');
+}
+#img_rolls_ananas:hover {
+    background-color: antiquewhite;
+    background-image: url('../images/rolls_ananas2.jpg');
+    animation: fadeIn 0.5s; 
+}
+#img_rolls_sempai {
+    background-color: antiquewhite;
+    background-image: url('../images/rolls_sempai.png');
+}
+#img_rolls_sempai:hover {
+    background-color: antiquewhite;
+    background-image: url('../images/rolls_sempai2.jpg');
+    animation: fadeIn 0.5s; 
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     20% { opacity: 0; }
@@ -308,12 +359,18 @@ header {
     .grocery_card,.img_grocery {
         width: 95%;
     }
-}
-.c-icon {
-    width: 40px;
-}
-.c-badge {
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
+    .pizza_main {
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        max-width: 90%;
+        height: auto;
+        margin: 5%;
+    }
+    .div_name_product,.div_hits {
+        font-size: 30px;
+    }
+    .div_suggestion,#div_suggestion_hits {
+        font-size: 20px;
+    }
 }
