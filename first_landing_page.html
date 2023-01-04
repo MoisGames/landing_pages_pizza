@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza hot! Buy best of pizza</title>
+    <title>Pizza hot! Buy best of pizza, rolls and drink!</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -13,11 +13,11 @@
     <header>
         <ul class="ul_navigation">
             <li class="li_navigation" id="li_hits"><a href="">ХИТЫ</a></li>
-            <li class="li_navigation" ><a href="">ПИЦЦА&ПАСТА</a></li>
+            <li class="li_navigation" ><a href=".div_hits">ПИЦЦА&ПАСТА</a></li>
             <li class="li_navigation" ><a href="">СУШИ&РОЛЛЫ</a></li>
             <li class="li_navigation"><a href="">НАПИТКИ</a></li>
             <li class="li_navigation"><a href="">ДОСТАВКА&ОПЛАТА</a></li>
-            <li class="li_navigation"><a class="tel" href="tel:+75942625690">+7(594)26-25-690</a></li>
+            <li class="li_navigation" id="li_tel"><a class="tel" href="tel:+75942625690">+7(594)26-25-690</a></li>
             </ul>
     </header>
 <div class="slogan">
@@ -176,20 +176,6 @@
         Собрали для вас лучшие блюда японской кухни
     </div>
     <div class="container_grocery">
-        <div class="grocery_card">
-            <a class="img_grocery" id="img_rolls_ananas"></a>
-                    <p class="name_grocery">Роллы с ананасом и лосососем</p>
-                    <p class="description_grocery">Экзотические роллы для ценителей вкуса / 280 гр.</p>
-                    <p class="price">229 руб.</p>
-                        <div class="button_counter_product">
-                            <input type="button" id="buttonCountPlus" value="+">
-                            <div id="buttonCountNumber">1</div>
-                            <input type="button" id="buttonCountMinus" value="–">
-                        </div>
-                        <button class="add_product" name="add_product_rolls_ananas" onclick="">
-                            В корзину       
-                        </button>      
-            </div>
             <div class="grocery_card">
                 <a class="img_grocery" id="img_standart_rolls"></a>
                         <p class="name_grocery">Классические Роллы</p>
@@ -219,6 +205,77 @@
                                     В корзину       
                                 </button>  
                     </div>
+                    <div class="grocery_card">
+                        <a class="img_grocery" id="img_rolls_ananas"></a>
+                                <p class="name_grocery">Роллы с ананасом</p>
+                                <p class="description_grocery">Экзотические роллы для ценителей вкуса / 240 гр.</p>
+                                <p class="price">249 руб.</p>
+                                    <div class="button_counter_product">
+                                        <input type="button" id="buttonCountPlus" value="+">
+                                        <div id="buttonCountNumber">1</div>
+                                        <input type="button" id="buttonCountMinus" value="–">
+                                    </div>
+                                    <button class="add_product" name="add_product_caramel_ponycard" onclick="">
+                                        В корзину       
+                                    </button>      
+                        </div>            
+        </div>
+        <div class="div_name_product">
+            НАПИТКИ
+        </div>
+        <div class="div_suggestion">
+            Охлаждающие и согревающие
+        </div>
+        <div class="container_grocery">
+                <div class="grocery_card">
+                    <a class="img_grocery" id="img_sea_buckthorn_punch"></a>
+                            <p class="name_grocery">Облепиховый пунш</p>
+                            <p class="description_grocery">Согревает лучше пледа / 200 мл</p>
+                            <p class="price">199 руб.</p>
+                                <div class="button_counter_product">
+                                    <input type="button" id="buttonCountPlus" value="+">
+                                    <div id="buttonCountNumber">1</div>
+                                    <input type="button" id="buttonCountMinus" value="–">      
+                                </div>
+                                <button class="add_product" name="add_product_sea_buckthorn_punch" onclick="">
+                                    В корзину       
+                                </button>  
+                    </div>
+                    <div class="grocery_card">
+                        <a class="img_grocery" id="img_cranberry_madness"></a>
+                                <p class="name_grocery">Клюквенное безумие</p>
+                                <p class="description_grocery">Мороженое, сироп клюквы, сливки / 350 мл</p>
+                                <p class="price">249 руб.</p>
+                                    <div class="button_counter_product">
+                                        <input type="button" id="buttonCountPlus" value="+">
+                                        <div id="buttonCountNumber">1</div>
+                                        <input type="button" id="buttonCountMinus" value="–">      
+                                    </div>
+                                    <button class="add_product" name="add_product_cranberry_madness" onclick="">
+                                        В корзину       
+                                    </button>  
+                        </div>
+                        <div class="grocery_card">
+                            <a class="img_grocery" id="img_caramel_ponycard"></a>
+                                    <p class="name_grocery">Карамельный пони</p>
+                                    <p class="description_grocery">Мороженое (ванильное и шоколадное),
+                                        шоколадный сироп, сливки / 350 мл</p>
+                                    <p class="price">249 руб.</p>
+                                        <div class="button_counter_product">
+                                            <input type="button" id="buttonCountPlus" value="+">
+                                            <div id="buttonCountNumber">1</div>
+                                            <input type="button" id="buttonCountMinus" value="–">
+                                        </div>
+                                        <button class="add_product" name="add_product_caramel_ponycard" onclick="">
+                                            В корзину       
+                                        </button>      
+                            </div>
+            </div>
+        <div class="div_name_product" id="name_promotion">
+            НАШИ АКЦИИ
+        </div>
+        <div class="div_suggestion" id="suggestion_promotion">
+            Спешим порадовать вас нашими лучшими предложениями
         </div>
   <script src="script/calculate.js"></script>
 </body>
