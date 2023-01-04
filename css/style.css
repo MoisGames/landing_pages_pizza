@@ -356,6 +356,58 @@ header {
     margin: 5%;
     font-size: 150%;
   }
+.flexslider.carousel {
+margin: 2% 20% 2% 20%;
+}
+.flex-caption {
+    width: 100%;
+    padding: 2%;
+    left: 0;
+    bottom: 0;
+    font-size: 25px;
+    
+  }
+  .li_slider_background {
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    height: 325px;
+    
+  }
+#title_slide {
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+    line-height: 30px;
+    margin: 10% 5% 0 5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+#description_slide {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    line-height: 30px;
+    margin: 0% 5% 5% 5%;
+    font-family: 'Courier New', Courier, monospace;
+    width: 90%;
+    height: 100px;
+}
+#description_gift{
+    font-size: 22.5px;
+    font-weight: bolder;
+    line-height: 30px;
+    margin: 0% 5% 5% 5%;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(214, 9, 95);
+}
+#hearts {
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 30px;
+    margin: 0% 5% 5% 5%;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(214, 9, 95);
+}
 @media (max-width: 770px) {
     .ul_navigation {
         flex-flow: row wrap;
@@ -407,4 +459,11 @@ header {
     .name_grocery {
         font-size: 25px;
     }
+    .flexslider.carousel {
+        margin: 5%;
+    }
+    .li_slider_background {
+    margin: 10%;
+    }
+
 }
