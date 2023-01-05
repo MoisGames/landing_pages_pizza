@@ -408,6 +408,53 @@ margin: 2% 20% 2% 20%;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(214, 9, 95);
 }
+.description_discount {
+    display: flex;
+    background-image: url(../images/autumn_leaves.png);
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}   
+.suggestion_discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    height: auto;
+    flex-flow: column wrap;
+    color: white;
+    text-align: center;
+}
+#getting_discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    flex-flow: column wrap;
+    line-height: 175px;
+    color: white;
+    margin: 0;
+
+}
+#div_delivery_pay {
+    margin-top: 10%;
+}
+.form_discount {
+    margin: 5% 0;
+}
+.input_discount {
+    width: 250px;
+    height: 40px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
 @media (max-width: 770px) {
     .ul_navigation {
         flex-flow: row wrap;
@@ -465,5 +512,19 @@ margin: 2% 20% 2% 20%;
     .li_slider_background {
     margin: 10%;
     }
-
+    .description_discount {
+        background-image: url(../images/autumn_leaves.png);
+        width: auto;
+        height: auto;
+        background-size: cover;
+    }
+    .suggestion_discount {
+        font-size: 15px;
+        margin: 5%;
+    }
+    #getting_discount {
+        line-height: 30px;
+        font-size: 30px;
+        margin: 0;
+    }
 }
