@@ -1,0 +1,50 @@
+<!doctype html>
+<title>Пример</title>
+<style>
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex; /*wrapper container */
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main { 
+  display: flex; /*container delivery */
+  flex: 1;
+}
+#main > article { /*image */
+  flex: 1;
+}
+#main > nav { /*text */
+  flex: 0 0 20vw;
+  background: beige;
+}
+#main > nav { /*text */
+  order: -1;
+}
+header, footer {
+  background: yellowgreen;
+  height: 20vh;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
+</style>
+<body>
+  <header>Шапка</header>
+  <div id="main"> <!-- wrapper_container_delivery -->
+    <article>
+        <p>333333333333333333</p>
+        <p>111111111111111111111111111111111111111111111111111111111111111</p>
+        <p>555555555555555555555555555555555555</p>
+    </article> <!-- image -->
+    <nav>
+        <p>77777777777777777777</p>
+        <p>1010101010</p>
+        <p>99999999999999999999999999999999999999</p>
+    </nav><!-- text -->
+  </div>
+  <footer>Подвал</footer>
+</body>
