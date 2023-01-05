@@ -471,15 +471,19 @@ margin: 2% 20% 2% 20%;
     margin: 15px;
     
 }
-.wrapper_container_delivery {
+.wrapper_wrapper_container_delivery {
     display: flex;
     flex-direction: column;
 }
+.wrapper_container_delivery {
+    display: flex;
+
+}
 .container_terms_delivery {
     display: flex;
-    width: 40%;
+    flex-direction: column;
     margin: 5%;
-    flex: 1;
+    flex: 0 0 40vw;
 }
 .terms_delivery {
     display: flex;
@@ -487,8 +491,6 @@ margin: 2% 20% 2% 20%;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     flex: 1;
-
-
 }
 .description_terms_delivery {
     display: flex;
@@ -499,8 +501,8 @@ margin: 2% 20% 2% 20%;
 }
 .coffee_terms_discount {
     display: flex;
-    justify-content: end space-around space-between;
-    width: 40%;
+    width: 30%;
+    justify-content: flex-start;
 }
 
 @media (max-width: 770px) {
@@ -575,5 +577,12 @@ margin: 2% 20% 2% 20%;
         line-height: 40px;
         font-size: 40px;
         margin: 0;
+    }
+    .wrapper_wrapper_container_delivery,.wrapper_container_delivery,.container_terms_delivery,.description_terms_delivery,.coffee_terms_discount {
+        display: flex;
+        flex-direction: column;
+    }
+    .coffee_terms_discount {
+        width: 100%;
     }
 }
