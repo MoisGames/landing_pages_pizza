@@ -644,7 +644,7 @@ footer {
     margin-top: 2.5%;
 }
 .a_email {
-    margin-right: 5%;
+    margin-top: 5%;
 }
 /*END_FOOTER*/
 /*MEDIA_REQUEST_MOBILE_ADAPTIVE*/
@@ -743,6 +743,9 @@ footer {
     .container_contacts_footer,.container_contacts_email_tel  {
         margin: 2.5% 0 0 2.5%;
         width: 100%;
+    }
+    .contacts_email_tel {
+        margin-top: 40px;
     }
     .icon_url {
         margin-top: 2.5%;
