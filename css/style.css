@@ -7,7 +7,7 @@ header {
 }
 .ul_navigation {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
 
 }
@@ -367,7 +367,7 @@ margin: 2% 20% 2% 20%;
     font-size: 25px;
     
   }
-  .li_slider_background {
+.li_slider_background {
     display: flex;
     background-color: rgb(236, 236, 236);
     border-radius: 20px;
@@ -504,7 +504,75 @@ margin: 2% 20% 2% 20%;
     width: 30%;
     justify-content: flex-start;
 }
+.pink_word {
+    display: contents;
+    color: rgb(214, 9, 95);
+    font-weight: 900;
+}
+.li_slider_background_review {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #ececec;
+    border-radius: 20px;
+    height: 400px;
+  }
+  .triangle_slider {
+    display: flex;
+    content: '0090'; 
+    width: 0;
+    height: 0;
+	left: 30px; 
+	top: 100px; 
+	border: 25px solid; 
+	border-color: #ececec transparent transparent #ececec;
+    margin: 0px 0 0 50px; 
+}
+.container_li_slider_background_review {
+    display: flex;
+    flex-flow: column wrap;
+}
+.container_people_review {
+    display: flex;
+}
+.image_people {
+    display: flex;
 
+}
+#vladislav_makarov_img {
+    display: flex;
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(../images/vladislav_makarov.png);
+}
+#maksim_igoreh_img {
+    display: flex;
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(../images/maksim_igoreh.jpeg);
+}
+#margarita_ivanova_img {
+    display: flex;
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(../images/margarita_ivanova.png);
+}
+.name_people {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5%;
+}
 @media (max-width: 770px) {
     .ul_navigation {
         flex-flow: row wrap;
@@ -581,6 +649,13 @@ margin: 2% 20% 2% 20%;
     .wrapper_wrapper_container_delivery,.wrapper_container_delivery,.container_terms_delivery,.description_terms_delivery,.coffee_terms_discount {
         display: flex;
         flex-direction: column;
+    }
+    .terms_delivery {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .description_terms_delivery {
+        font-size: 20px;
     }
     .coffee_terms_discount {
         width: 100%;
